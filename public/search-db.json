@@ -1,12 +1,12 @@
 [
     {
-        "languages": "Eng-Pol"
-        "id": "test"
+        "languages": "Eng-Pol",
+        "id": "test",
         "title": "Example Flashcards1"
     },
     {
-        "languages": "Eng-Pol"
-        "id": "test2"
+        "languages": "Eng-Pol",
+        "id": "test2",
         "title": "Example Flashcards2"
     }
 ]
