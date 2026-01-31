@@ -66,11 +66,8 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header("Content-type", "application/json; charset=utf-8")
                 self.end_headers()
 
-                # Jeśli tylko jeden wynik, zwracamy obiekt, jeśli więcej – listę
-                if len(results) == 1:
-                    self.wfile.write(json.dumps(results[0], ensure_ascii=False, indent=2).encode("utf-8"))
-                else:
-                    self.wfile.write(json.dumps(results, ensure_ascii=False, indent=2).encode("utf-8"))
+                # Zawsze zwracamy listę, nawet jeśli jest tylko 1 wynik
+                self.wfile.write(json.dumps(results, ensure_ascii=False, indent=2).encode("utf-8"))
 
             except Exception as e:
                 self.send_response(500)
