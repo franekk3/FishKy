@@ -27,6 +27,7 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 .dowload-button {
     background-color: rgb(132, 175, 255);
@@ -42,6 +43,7 @@ html, body {
 .dowload-button:hover {
     background-color: rgb(149, 186, 255);
     scale: 1.1;
+    cursor: pointer;
 }
 .download-box {
     margin: 10px;
@@ -54,6 +56,7 @@ html, body {
     width: 90%;
     max-width: 450px;
     margin: 5px;
+    
 
 }
 .donwload-btns {
@@ -137,4 +140,45 @@ html, body {
 .btn-on-footer:hover {
     background-color: rgb(75, 75, 75);
     scale: 1.1;
+    cursor: pointer;
+}
+.side-menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(255, 223, 184);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial;
+    gap: 10px;
+    border-radius: 0px 0px 0px 25px;
+    
+}
+.side-bar-option {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(252, 205, 135);
+    color: #454545;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    justify-content: left;
+    align-items: center;
+    padding: 4px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    gap: 10px;
+    cursor: pointer;
+}
+.side-bar-icon {
+    height: 40px;
+    width: 40px;
+}
+.hidden {
+    display: none !important;
 }
