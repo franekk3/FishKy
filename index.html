@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="nav-bar">
-        <div class="site-logo-box"> 
+        <div onclick="window.location.href='./index.html';" class="site-logo-box"> 
             <img height="55px" width="55px" src="./web/icons/fishky-logo-notext-no-bg.png">
             <p class="site-title"> Fisq!  </p>
         </div>
@@ -33,19 +33,38 @@
     </div>
 
     </div>
-
-    <div  class="fishky-slider">
+<div  class="responsive-container">
+    <div style="max-width: 430px; width: 90%;" class="fishky-slider">
         <p class="download-title"> ScreenShots! </p>
         <div style="display: flex; flex-direction: row; text-align: center; align-items: center; justify-content: center; gap: 10px;">
             <img src="./web/icons/angle-left.png" class="nav-icon left" onclick="changeSlide(-1)" alt="Previous">
 
-            <div class="slide-container">
+            <div style="max-width: 300px; max-height: 600px;" class="slide-container">
                 <img id="current-slide" src="./web/media/screenshot_1.png" alt="ScreenShot">
             </div>
 
             <img src="./web/icons/angle-right.png" class="nav-icon right" onclick="changeSlide(1)" alt="Next">
         </div>
     </div>
+    <div tyle="max-width: 430px; max-width: 90%;" class="download-box">
+        <p class="download-title"> What is "Fisq!" ? </p>
+        <p class="normal-text"> Fisq! is a free Android application designed for efficient learning with flashcards. My goal is to create a tool for everyone, which is why I’ve focused on making the experience as intuitive and user-friendly as possible. <br><br>
+</p>
+<hr style="width: 80%; background-color: rgb(0, 132, 255);">
+<p class="normal-text" style="text-align: left;"><b>Key Features:</b><br><br>
+
+<i>- <b>Flexible Learning:</b> Use flashcard sets directly from the server or load them from your local files.</i><br><br>
+
+<i>- <b>Built-in Creator:</b> Easily create your own decks using the integrated creator. No more manual file editing!</i><br><br>
+
+<i>- <b>No Technical Skills Required:</b> The creator serves as a smart UI for .json files. You can build professional flashcard sets without needing to understand the underlying code or JSON structure.</i><br><br>
+
+Whether you are a student or just someone looking to learn something new, Fisq! provides a seamless way to manage and study your materials.! </p>
+    </div>
+
+
+</div>
+
     <div class="footer">
         <p>  &copy; Fisq! | 2026 </p>
         <div style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 10px; margin-top: 10px; width: 100%; justify-content: center;">
